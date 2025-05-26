@@ -20,16 +20,16 @@ Perfect for content creators managing pet/animal/cute content channels.
 
 ## 📂 Project Structure
 tiktokbot/
-├── data/
-│ └── image/ # 
-│ └── music/ # Background music (MP3)
-│ └── downloaded_images.csv # Download history
-├── output/ # Final videos
-├── README.md
-├── tiktokloader.py # TikTok uploader
-├── imageloader.py # Pinterest downloader
-├── tiktokloader.py # TikTok uploader
-└── main_controller.py # Main scheduler
+- data/
+- - image/ # 
+- - music/ # Background music (MP3)
+- -  downloaded_images.csv # Download history
+- output/ # Final videos
+- README.md
+- tiktokloader.py # TikTok uploader
+- imageloader.py # Pinterest downloader
+- tiktokloader.py # TikTok uploader
+-  main_controller.py # Main scheduler
 
 ## 🚀 Quick Start
 
@@ -41,24 +41,24 @@ tiktokbot/
 
 ### Installation
 
-git clone https://github.com/Vilenchik/tiktokbot.git
-cd tiktokbot
-pip install -r requirements.txt
+- git clone https://github.com/Vilenchik/tiktokbot.git
+- cd tiktokbot
+- pip install -r requirements.txt
 
 
 ## Configuration
 Edit credentials in imageloader.py:
 
-username = "your@pinterest.email"
-password = "yourpassword"
-chrome_options.add_argument(r"user-data-dir=./ChromeBotProfile")
-search_query = "two cute cats"
-Add MP3 files to /music folder
-max_images = 7  # Set maximum number of images
+- username = "your@pinterest.email"
+- password = "yourpassword"
+- chrome_options.add_argument(r"user-data-dir=./ChromeBotProfile")
+- search_query = "two cute cats"
+- Add MP3 files to /music folder
+- max_images = 7  # Set maximum number of images
 
 Edit credentials in tiktokloader.py:
 
-CHROME_PROFILE_PATH = r"./ChromeBotProfile"
-DEFAULT_DURATION = 15
-RESOLUTION = (1080, 1920)
-TIKTOK_DESCRIPTION = "❤️ #fyp #cutecat #couple #cat"
+- CHROME_PROFILE_PATH = r"./ChromeBotProfile"
+- DEFAULT_DURATION = 15
+- RESOLUTION = (1080, 1920)
+- TIKTOK_DESCRIPTION = "❤️ #fyp #cutecat #couple #cat"
